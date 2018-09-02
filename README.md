@@ -1,1 +1,3 @@
-# js-algo
+# JS Algorithms
+* Quicksort
+...
