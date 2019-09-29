@@ -1,9 +1,3 @@
-function swap(array, indexA, indexB) {
-    const temp = array[indexA];
-    array[indexA] = array[indexB];
-    array[indexB] = temp;
-}
-
 function makePartitionAndSort(array, startIndex, endIndex) {
     const pivot = array[startIndex];
     let i = startIndex - 1;
@@ -24,7 +18,7 @@ function makePartitionAndSort(array, startIndex, endIndex) {
             return j;
         }
 
-        swap(array, i, j);
+        [array[i], array[j]] = [array[j], array[i]];
     }
 }
 
